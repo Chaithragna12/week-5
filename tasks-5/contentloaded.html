@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM content is filled</title>
+</head>
+<body>
+    <h1>The content is fully filled</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            console.log(`DOM content is filled`);
+            document.body.innerHTML+=`<p>DOM content is filled</p>`
+        })
+    </script>
+</body>
+</html>

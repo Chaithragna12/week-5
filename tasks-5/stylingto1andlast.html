@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Styles to First and Last Child</title>
+    <style>
+        .first{
+            color: navy;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .last{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="element">
+        <h1>first-child</h1>
+        <h1>Middle-child</h1>
+        <h1>last-child</h1>
+    </div>
+    <script>
+        const parent=document.getElementById('element');
+        const firstChild=parent.firstElementChild;
+        const lastChild=parent.lastElementChild;
+        if(firstChild){
+            firstChild.classList.add('first');
+        }
+        if(lastChild){
+            lastChild.classList.add('last');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding element</title>
+</head>
+<body>
+    <ul id="items">
+        <li>mango</li>
+        <li>apple</li>
+        <li>pineapple</li>
+    </ul>
+    <button id="button">add</button>
+
+
+    <script>
+        const ulList=document.getElementById('items');
+        const button=document.getElementById('button');
+        button.addEventListener('click',()=>{
+            const newitem=document.createElement('li');
+            newitem.textContent='new item';
+            ulList.appendChild(newitem);
+        })
+    </script>
+
+</body>
+</html>

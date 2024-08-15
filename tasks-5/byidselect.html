@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+    <script>
+        function change(){
+            let element=document.getElementById('para');
+            element.style.backgroundColor='navy';
+        }
+    </script>
+    <style>
+        #para{
+            height: 25vh;
+            text-align: center;
+        }
+        .button{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="para">Hi,Good Morning</div>
+    <div class="button">
+        <button onclick="change()">Tap to change background</button>
+    </div>
+</body>
+</html>

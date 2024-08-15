@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Tracking</title>
+    <style>
+        #trackArea{
+            width: 200px;
+            height: 200px;
+            border: 2px  solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="trackArea">
+        <div id="coordinates">x:0,y:0</div>
+    </div>
+    <script>
+        const trackArea=document.getElementById('trackArea');
+        const coordinates=document.getElementById('coordinates');
+        trackArea.addEventListener('mousemove',(event)=>{
+            const rect=trackArea.getBoundingClientRect();
+            const x=event.clientX-rect.left;
+            const y=event.clientY-rect.top;
+
+            coordinates.textContent=`x:${x}, y:${y}`;
+        })
+    </script>
+</body>
+</html>

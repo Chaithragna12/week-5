@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realme</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #image{
+            width: 300px;
+            height: 50vh;
+            margin-left: 4rem;
+            margin-top: 20px;
+        }
+            #anotherimgs{
+                display: grid;
+                gap: 20px;
+                position: absolute;
+                top: 100px;
+            }
+            .image1{
+                height: 10vh;
+                width: 50px;
+            }
+            .image2{
+                height: 10vh;
+                width: 50px;
+            }
+            .image{
+                height: 10vh;
+                width: 50px;
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+    <div id="largeimg">
+        <img id="image" src="https://www.91-cdn.com/hub/wp-content/uploads/2024/04/realme-p1-5g.jpg" alt="">
+    </div>
+    <div id="anotherimgs">
+        <img id="img" class="image" src="https://st1.latestly.com/wp-content/uploads/2024/04/MicrosoftTeams-image-2024-04-13T170617.974-380x214.jpg" alt="">
+        <img id="img" class="image1" src="https://static2.realme.net/images/realme-p1-pro/design/2.png" alt="">
+        <img id="img" class="image2" src="https://www.jiomart.com/images/product/original/rvvpff068z/fashionury-back-cover-for-realme-p1-5g-compatible-for-back-covermatte-soft-case-liquid-silicon-puff-case-for-with-camera-protection-black-product-images-orvvpff068z-p609220921-0-202406051323.jpg?im=Resize=(1000,1000)" alt="">
+    </div>
+</div>
+    <div class="right">
+        <p>realme P1 5G (Phoenix Red, 128 GB)  (6 GB RAM)</p>
+        <p>4.324,302 Ratings & 1,508 Reviews</p>
+        <p>Extra ₹5000 off</p>
+        <h1>₹15,999</h1>
+        <p>&#9733; &#9733; &#9733; &#9733; &star; Rating</p>
+        <p>-70% &#8377;450</p>
+        <div class="ele">
+            <div class="box1">
+                <p><b>Offer 1</b></p>
+                <p>5.265% Instant Discount + up to 5% back with Amazon Pay ICICI Bank Credit Card Trxn. Minimum Trxn
+                    is ₹3,000
+                </p>
+            </div>
+            <div class="box2">
+                <p><b>Offer 2</b></p>
+                <p>10% Instant Discount up to INR 1000 on ICICI Bank Credit Cards (excluding Amazon Pay ICICI Credit
+                    Card). Minimum Trxn is ₹3,000</p>
+            </div>
+        </div>
+        <b><p>Product details:</p></b>
+        <p>Length: 6yards</p>
+        <p>Pattern: Solid</p>
+        <p>Country of Origin: India</p>
+    </div>
+</div>
+    <script>
+        const thumbnails=document.querySelectorAll('#img');
+        const displayedImage=document.getElementById('image');
+
+        thumbnails.forEach(thumbnail=>{
+            thumbnail.addEventListener('click',function(){
+                displayedImage.src=this.src;
+                thumbnails.forEach(thumb=>thumb.style.borderColor='transparent');
+                this.style.borderColor='#333';
+            })
+            
+        })
+    </script>
+</body>
+</html>

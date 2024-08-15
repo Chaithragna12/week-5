@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        #image{
+            width: 300px;
+            height: 50vh;
+        }
+            #anotherimgs{
+                display: flex;
+            }
+            .image1{
+                height: 40vh;
+                width: 250px;
+                border-color: black;
+            }
+            .image2{
+                height: 40vh;
+                width: 300px;
+            }
+            .image{
+                height: 40vh;
+                width: 250px;
+            }
+    </style>
+</head>
+<body>
+    <div id="largeimg">
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQ2LjHKNW_EzbzUn9wYlKhuB7XcQ3XcCioQ&s" alt="">
+    </div>
+    <div id="anotherimgs">
+        <img id="img" class="image" src="https://cdn.pixabay.com/photo/2024/06/22/05/14/ai-generated-8845454_1280.jpg" alt="">
+        <img id="img" class="image1" src="https://cdn.pixabay.com/photo/2024/04/25/11/57/ai-generated-8719636_1280.jpg" alt="">
+        <img id="img" class="image2" src="https://m.media-amazon.com/images/I/717HHRd2vBL._AC_UF1000,1000_QL80_.jpg" alt="">
+    </div>
+    <script>
+        const thumbnails=document.querySelectorAll('#img');
+        const displayedImage=document.getElementById('image');
+
+        thumbnails.forEach(thumbnail=>{
+            thumbnail.addEventListener('click',function(){
+                displayedImage.src=this.src;
+                thumbnails.forEach(thumb=>thumb.style.borderColor='transparent');
+                this.style.borderColor='#333';
+            })
+            
+        })
+    </script>
+</body>
+</html>

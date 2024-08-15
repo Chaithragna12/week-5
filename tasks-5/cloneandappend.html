@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone and Append</title>
+</head>
+<body>
+    <div id="source">
+        <h1>heading1</h1>
+        <h1>heading2</h1>
+    </div>
+    <button id="button">Clone and Append</button>
+    <div id="destination">
+
+    </div>
+    <script>
+        document.getElementById('button').addEventListener('click',function(){
+            const source=document.getElementById('source');
+            const destination=document.getElementById('destination');
+            const clone=source.cloneNode(true);
+            destination.appendChild(clone)
+        })
+    </script>
+</body>
+</html>

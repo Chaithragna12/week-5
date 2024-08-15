@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Parent Border Color</title>
+    <style>
+        ul{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li>hi</li>
+    <li id="how">how are you?</li>
+   </ul>
+   <script>
+    const child=document.getElementById('how');
+    const parent=child.parentElement;
+    parent.style.borderColor='purple';
+   </script>
+</body>
+</html>

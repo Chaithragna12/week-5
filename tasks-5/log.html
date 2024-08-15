@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log List Items</title>
+</head>
+<body>
+    <ul class="lists">
+        <li>milk</li>
+        <li>sugar</li>
+        <li>Tea powder</li>
+        <li>water</li>
+        <li>ginger</li>
+    </ul>
+    <script>
+        const ulElements = document.querySelectorAll('ul');
+        ulElements.forEach(ul => {
+        const liElements = ul.querySelectorAll('li');
+        liElements.forEach(li => {
+            console.log(li.textContent);
+        });
+    });
+    </script>
+</body>
+</html>

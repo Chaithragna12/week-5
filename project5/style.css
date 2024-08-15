@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black;  */
+    background-color: rgb(240, 228, 215);
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.imglogo{
+    margin-left: 10rem;
+    height: 15vh;
+    width: 100px;
+    border-radius: 80px;
+}
+.nav2{
+    /* border: 2px solid black; */
+    margin-right: 5rem;
+    padding: 3rem;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+}
+.home{
+    height: 85vh;
+    background-color: rgb(245,245,240);
+}
+.homeimg{
+    position: absolute;
+    left: 35rem;
+    top: 13rem;
+}
+.h1{
+    margin-left: 10rem;
+    padding-top: 15rem;
+}
+.washing{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    border: 2px solid #ebebeb;
+    background-color:#fff;
+
+}
+.wm{
+    padding-top: 30px;
+}
+.sn{
+    font-weight: 500;
+    color: #212121;
+}
+.va{
+    margin-top: 35px;
+    width: 100px;
+    height: 4vh;
+    margin-right: 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 300;
+}
+.img1,.img2,.img3,.img4{
+    padding-top: 3rem;
+    height: 25vh;
+}
+
+.phone{
+    display: flex;
+    justify-content: space-evenly;
+    height: 38vh;
+    
+    /* border: 2px solid black;  */
+
+}
+.p{
+    font-weight: 500;
+    color: #212121; 
+}
+.reviews{
+    height: 85vh;
+    background-color: #fff;
+    /* border: 2px solid black;  */
+}
+.mid{
+    /* border: 2px solid black;  */
+    height: 30vh;
+    margin-top: 10rem;
+    background-color: rgb(240, 228, 215);
+}
+.r1{
+    width: 18rem;
+    height: 38vh;
+    background-color: #ececec;
+    /* position: absolute; */
+    position: relative;
+    bottom:  16rem;
+    left: 20rem;
+    /* z-index: 1; */
+}
+.r2{
+    width: 18rem;
+    height: 38vh;
+    background-color: #ececec;
+    /* position: absolute; */
+    position: relative;
+    bottom: 33.5rem; 
+    left: 50rem;
+}
+.contact{
+    height: 80vh;
+    background-image: url(https://img.freepik.com/free-vector/gold-border-background-white-modern-business-design-vector_53876-157564.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+#form{
+    margin-left: 15rem;
+    margin-top: 10rem;
+}
+.highlight{
+    background-color: rgb(240, 228, 215);
+}
+a:hover{
+    text-decoration: underline;
+}
+.img1{
+    transition: transform .2s;
+}
+.img1:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.img2{
+    transition: transform .2s;
+}
+.img2:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.img3{
+    transition: transform .2s;
+}
+.img3:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.img4{
+    transition: transform .2s;
+}
+.img4:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}

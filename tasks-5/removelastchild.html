@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove last child</title>
+</head>
+<body>
+    <div id="container">
+        <h1>first child</h1>
+        <h1>second child</h1>
+        <h1>thrid child</h1>
+    </div>
+    <button id="button">Tap to remove</button>
+
+
+    <script>
+        document.getElementById('button').addEventListener('click',function(){
+            const container=document.getElementById('container');
+            if(container.lastElementChild){
+                container.removeChild(container.lastElementChild)
+            }
+        })
+        
+    </script>
+
+</body>
+</html>

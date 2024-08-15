@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Elements</title>
+    <style>
+        .bg-one{
+            background-color: navajowhite;
+            transition: background-color 0.5s ease;
+        }
+        .bg-two{
+            background-color: navy;
+            transition: background-color 0.5s ease;
+        }
+        .container{
+            text-align: center;
+            margin-top: 20rem;
+        }
+    </style>
+</head>
+<body class="bg-one">
+    <div class="container">
+        <button id="button">tap to change background</button>
+    </div>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            const toggle=document.getElementById('button');
+            toggle.addEventListener('click',()=>{
+                if(document.body.classList.contains('bg-one')){
+                    document.body.classList.replace('bg-one','bg-two');
+                }
+                else{
+                    document.body.classList.replace('bg-two','bg-one');
+                }
+            })
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incremental Styling for Siblings</title>
+</head>
+<body>
+    <div id="container">
+        <p class="p">para</p>
+        <p class="p">para</p>
+        <p class="p">para</p>
+    </div>
+
+    <script>
+        const container=document.getElementById('container');
+        let increment=1;
+        let firstchild=container.firstElementChild;
+        while(firstchild){
+            firstchild.style.backgroundColor=`rgb(${100+increment*20},${150+increment*10},${20-increment*20})`;
+            firstchild.style.fontSize=`${50+increment}px`;
+            firstchild=firstchild.nextElementSibling;
+        }
+    </script>
+</body>
+</html>
